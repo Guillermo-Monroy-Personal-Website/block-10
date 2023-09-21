@@ -1,0 +1,288 @@
+
+
+ 
+  
+       
+    
+ 
+
+
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: montserrat,sans-serif;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+    
+.navigation-container{
+    position: relative;
+    max-width: 100%;
+    padding: 10px;
+    margin: 20px 30px;
+    box-sizing: border-box;
+    background-color: transparent;}
+
+    .logo {
+      color: white;
+      height: 40px;
+      font-size: 18px;
+      line-height: 60px;
+      padding: 0px 20px;
+      text-align: center;
+      box-sizing: border-box;
+      float:left;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+
+.menu {
+    float: right;
+    }
+
+.fix{
+    clear:both;}
+
+.menu ul{
+    margin: 0px;
+    padding: 0px 20px;
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a{
+    display: block;
+    margin: 0px 0px;
+    padding: 0px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    
+}
+
+.menu ul li a:hover {
+    color: red;
+    font-size:20px;}
+
+
+
+ 
+
+h1{
+    font-weight: bolder;
+    margin: 0px;
+    color: white;
+    } 
+
+ p{
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    margin: 10px 0px 40px;
+    color: whitesmoke;}
+
+    
+
+       
+        
+
+
+  .text1 {
+         
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          flex-wrap: wrap;
+          position: absolute;
+          top: 50%;
+          left: 30%;
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          }  
+
+          .text1 {
+            width: 300px;
+            height: 300px;
+            
+        }
+
+
+          .text2 {
+           
+            padding: 0;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: absolute;
+            top: 35%;
+            left: 55%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            }
+
+
+            .text2 {
+                width: 500px;
+                height: 500px;
+               }   
+           
+            
+
+
+          
+        
+
+
+
+        
+        
+       
+       
+
+   
+
+
+     
+    
+    a {
+        text-decoration: none;
+        color: inherit;}
+  
+    .btn { 
+        border: 1px solid orangered;
+        background-color: black;
+        font-size: 12px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        color: white;
+        padding: 10px 10px;
+        border-radius: 20px;
+        letter-spacing: 1.5px;
+        transition: transform 80ms ease-in;
+}
+
+.btn {
+    transform: scale(0.95);
+}
+
+    .btn {
+         
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+   
+
+    .btn:hover {
+        color: red;
+        font-size:14px;
+        background:black;}
+
+    
+
+
+  
+
+    
+
+
+        
+
+
+
+    .social {
+        margin: 0;
+        position: absolute;
+        top: 85%;
+        left: 49%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        }
+
+        .social ul li {
+            list-style: none;
+            display: inline-block;
+        }
+        
+        .social ul li a{text-decoration: none;
+                        color:blue}
+
+   
+       
+    .social i {
+        padding: 40px 20px;
+        font-size: 30px;
+        }
+
+    .fa-instagram:hover,
+    .fa-linkedin:hover {
+        color: red;
+        font-size:33px;
+        }
+  
+   
+
+       
+
+       
+        .image1 {
+            width: 200px;
+            display:block;
+            box-shadow: 5px 15px 20px grey;
+            position: absolute;
+            left: 34%;
+            top: 40%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            }
+
+
+
+              
+        .image3{
+            width: 500px;
+            height: 500px;
+            display:block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    } 
+            
+
+
+
+            
+        
+      
+
+    
+
+    
+        
+    
+    
+
+
+    
+    
+
