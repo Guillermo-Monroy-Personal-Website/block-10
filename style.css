@@ -11,11 +11,12 @@ body{
 
 
 body, html {
-    margin: 0px;
+    
+    
+    height: 100vh;
     padding: 0px;
     align-items: center;
     justify-content: center;
-    height: 100%;
     font-family: montserrat,sans-serif;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -54,9 +55,8 @@ body, html {
 
 .menu ul{
     margin: 0px;
-    padding: 0px 20px;
-    display: flex;
-}
+    padding: 0px 10px;
+    display: flex;}
 
 .menu ul li {
     list-style: none;
@@ -67,32 +67,55 @@ body, html {
     margin: 0px 0px;
     padding: 0px 20px;
     text-decoration: none;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 12px;
     color: white;
+    transition: all .5s;
     
 }
 
 .menu ul li a:hover {
     color: red;
-    font-size:20px;}
+    font-size: 13px;}
 
 
+   
 
  
 
-h1{
+#para{
     font-weight: bolder;
     margin: 0px;
-    color: white;
+    color: whitesmoke;
+    font-size: 12px;
     } 
 
- p{
+ #header2{
     font-size: 14px;
     line-height: 25px;
     letter-spacing: 0.5px;
     margin: 10px 0px 40px;
-    color: whitesmoke;}
+    color: whitesmoke;
+    font-weight: lighter;}
+
+    #para1{
+        font-weight: lighter;
+        margin: 0px;
+        color: white;
+        font-size: 12px;
+      
+        } 
+    
+     #header1{
+        font-size: 14px;
+        line-height: 25px;
+        letter-spacing: 0.5px;
+        margin: 10px 0px 40px;
+        font-weight: lighter;
+        color: white;
+        }
+
+
 
     
 
@@ -100,7 +123,7 @@ h1{
         
 
 
-  .text1 {
+  .text {
          
           flex: 1;
           display: flex;
@@ -108,20 +131,20 @@ h1{
           justify-content: center;
           flex-wrap: wrap;
           position: absolute;
-          top: 50%;
+          top: 40%;
           left: 30%;
           -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
           }  
 
-          .text1 {
+          .text {
             width: 300px;
             height: 300px;
             
         }
 
 
-          .text2 {
+          .fade-in-text {
            
             padding: 0;
             flex: 1;
@@ -130,114 +153,55 @@ h1{
             justify-content: center;
             flex-wrap: wrap;
             position: absolute;
-            top: 35%;
-            left: 55%;
+            top: 40%;
+            left: 50%;
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             }
 
 
-            .text2 {
+            .fade-in-text {
                 width: 500px;
                 height: 500px;
                }   
            
-            
-
-
-          
-        
-
-
-
-        
-        
-       
-       
-
-   
-
-
-     
-    
-    a {
+           a {
         text-decoration: none;
         color: inherit;}
-  
-    .btn { 
-        border: 1px solid orangered;
-        background-color: black;
-        font-size: 12px;
-        font-weight: bolder;
-        text-transform: uppercase;
-        color: white;
-        padding: 10px 10px;
-        border-radius: 20px;
-        letter-spacing: 1.5px;
-        transition: transform 80ms ease-in;
-}
-
-.btn {
-    transform: scale(0.95);
-}
-
-    .btn {
-         
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-
-   
-
-    .btn:hover {
-        color: red;
-        font-size:14px;
-        background:black;}
-
-    
-
-
-  
-
-    
-
-
-        
-
-
 
     .social {
         margin: 0;
         position: absolute;
         top: 85%;
-        left: 49%;
+        left: 2%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         }
 
         .social ul li {
             list-style: none;
-            display: inline-block;
+            display: flex;
         }
         
         .social ul li a{text-decoration: none;
-                        color:blue}
+                        color:white;
+                      transition: all .5s;
+                    line-height: 30px;
+                    }
 
    
        
     .social i {
-        padding: 40px 20px;
-        font-size: 30px;
+        padding: 20px 20px;
+        font-size: 20px;
         }
 
     .fa-instagram:hover,
     .fa-linkedin:hover {
         color: red;
-        font-size:33px;
+        font-size:25px;
+        transition: all .5s
+        
         }
   
    
@@ -245,46 +209,282 @@ h1{
        
 
        
-        .image1 {
-            width: 200px;
-            display:block;
-            box-shadow: 5px 15px 20px grey;
-            position: absolute;
-            left: 34%;
-            top: 40%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            }
+       
 
 
 
               
-        .image3{
-            width: 500px;
-            height: 500px;
-            display:block;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    } 
+        
+
+    
+
+
+                .image{
+                  display: block;
+                  margin-left:auto;
+                  margin-right: auto;
+                  width: 30%;
+                  height: 600px;
+                  top: 100px;
+                  opacity: 0.5;
+                  position: relative;
+                  
+                  }
+
+                
+
+                  
+                   
+           
+
+
             
 
+            .fade-in1 {
+                animation: fadeIn ease 7s;
+                -webkit-animation: fadeIn ease 7s;
+                -moz-animation: fadeIn ease 7s;
+                -o-animation: fadeIn ease 7s;
+                -ms-animation: fadeIn ease 7s;
+                
+                
+                }
+
+              @keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+              }
+              
+              @-moz-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+              }
+              
+              @-webkit-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+              }
+              
+              @-o-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+              }
+              
+             
+              
 
 
-            
-        
-      
+              .fade-in2  {
+                animation: fadeIn ease 7s;
+                -webkit-animation: fadeIn ease 7s;
+                -moz-animation: fadeIn ease 7s;
+                -o-animation: fadeIn ease 7s;
+                -ms-animation: fadeIn ease 7s;
+                
+                }
 
+              @keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+              }
+              
+              @-moz-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+              }
+              
+              @-webkit-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+              }
+              
+              @-o-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+              }
+              
+
+              .layer{
+                animation: fadeIn ease 10s;
+                -webkit-animation: fadeIn ease 10s;
+                -moz-animation: fadeIn ease 10s;
+                -o-animation: fadeIn ease 10s;
+                -ms-animation: fadeIn ease 10s;
+                
+                
+                }
+
+              @keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+              }
+              
+              @-moz-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+              }
+              
+              @-webkit-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+              }
+              
+              @-o-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+              }
+
+
+         
+
+
+               
+              .fade-in-text {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 60px;
+                animation: fadeIn 10s;
+                -webkit-animation: fadeIn 10s;
+                -moz-animation: fadeIn 10s;
+                -o-animation: fadeIn 10s;
+                -ms-animation: fadeIn 10s;
+              }
+              
+              @keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+              }
+              
+              @-moz-keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+              }
+              
+              @-webkit-keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+              }
+              
+              @-o-keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+              }
+              
+              @-ms-keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+              }
+
+
+.work-list{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 200px;
+  ;
+  
+}
+
+.work {
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  opacity: 0.5;}
+
+  .work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transfrom 0.5s;
+    ;
+  }
+
+  .layer{
+    width: 100%;
+    height: 0%;
+    border-radius: 10px;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+    background: linear-gradient(to top, transparent 0%, grey 0%,transparent 100%);
+  
+  }
+
+
+
+  
+  
+  
+
+  .layer h3{
+    font-weight: 300;
+    margin-bottom: 5%;
+    margin-right:50px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
+    color:white;
+
+  }
+
+  .layer p{
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
+ }
+
+  .layer a{
+    margin-top: 20px;
+    color:red;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 50px;
+    transition: all .5s
+
+  }
+
+  .work:hover img{
+    transform: scale(1.1);
     
+  } 
 
-    
-        
-    
-    
+  .work:hover .layer{
+  height: 100%}
 
 
-    
-    
+  .btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 18px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+  }
+  
+  .btn:hover{
+    background: red;
+  }
 
+
+  
