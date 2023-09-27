@@ -21,7 +21,7 @@ body, html {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    ;
 }
     
 .navigation-container{
@@ -33,9 +33,9 @@ body, html {
     background-color: transparent;}
 
     .logo {
-      color: white;
+      color: gray;
       height: 40px;
-      font-size: 18px;
+      font-size: 12px;
       line-height: 60px;
       padding: 0px 20px;
       text-align: center;
@@ -43,6 +43,7 @@ body, html {
       float:left;
       font-weight: 700;
       text-decoration: none;
+      
     }
 
 
@@ -67,15 +68,15 @@ body, html {
     margin: 0px 0px;
     padding: 0px 20px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 12px;
-    color: white;
+    color:grey;
     transition: all .5s;
     
 }
 
 .menu ul li a:hover {
-    color: red;
+    color:white;
     font-size: 13px;}
 
 
@@ -86,8 +87,8 @@ body, html {
 #para{
     font-weight: bolder;
     margin: 0px;
-    color: whitesmoke;
-    font-size: 12px;
+    color: grey;
+    font-size: 19px;
     } 
 
  #header2{
@@ -112,7 +113,7 @@ body, html {
         letter-spacing: 0.5px;
         margin: 10px 0px 40px;
         font-weight: lighter;
-        color: white;
+        color: grey;
         }
 
 
@@ -184,7 +185,7 @@ body, html {
         }
         
         .social ul li a{text-decoration: none;
-                        color:white;
+                        color:grey;
                       transition: all .5s;
                     line-height: 30px;
                     }
@@ -205,6 +206,20 @@ body, html {
         }
   
    
+        .image2{
+          display: block;
+          margin-left:auto;
+          margin-right: auto;
+          width: 100%;
+          opacity: 0.1;
+          margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+z-index:-6;}
+
 
        
 
@@ -305,6 +320,36 @@ body, html {
                 100% {opacity:1;}
               }
               
+
+
+              .fade-in3 {
+                animation: fadeIn ease 7s;
+                -webkit-animation: fadeIn ease 7s;
+                -moz-animation: fadeIn ease 7s;
+                -o-animation: fadeIn ease 7s;
+                -ms-animation: fadeIn ease 7s;
+                
+                }
+
+              @keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+              }
+              
+              @-moz-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+              }
+              
+              @-webkit-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+              }
+              
+              @-o-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+              }
 
               .layer{
                 animation: fadeIn ease 10s;
@@ -660,3 +705,40 @@ textarea:valid~label{
   .btn:disabled {
     box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
   }
+
+  .fade-in {
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: relative;
+}
+
+/*Initial image*/
+ .fade-in:before {
+    content:"";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-image:url(GMOImage2.jpeg);
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    z-index:10;
+}
+.fade-in2:hover::before {
+    opacity:0.8;
+}
+.fade-in2:after {
+    content:"";
+    background: url(travel.png);
+    /*opacity: 0.5;*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
