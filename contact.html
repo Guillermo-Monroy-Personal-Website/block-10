@@ -32,14 +32,57 @@
 </div>
 </div>
 
+<?php
+$message_sent = false;
+
+if(isset($_POST['email']) && $_POST['email'] !=''){
+
+if( filter_var($_POST['name'], FILTER_VALIDATE_EMAIL)){
+
+$name = $_POST[ 'Your Name'];
+$number = $_POST[ 'Phone No.'];
+$email = $_POST[ 'Email Id'];
+$message = $_POST[ 'Your Message'];
+
+$to = "monroygmo73@gmail.com";
+$body = "";
+
+$body .= "From: ".$Name. "\r\n";
+$body .= "Email: ".$Email Id. "\r\n";
+$body .= "Message: ".$Name. "\r\n";
 
 
+mail ($to, $message, $body);
 
-<form action="https://formsubmit.co/monroygmo73@gmail.com" method="POST">  
-    <input type="hidden" name="_next" value="https://guillermo-monroy-personal-website.github.io/block-10/Thankyou.html">
+$message_sent = true;
+
+}
+else{
+
+    $invalid = "form-invalid";
+}
+
+
+}
+
+
+?> 
+
+
+<?php
+if(message_sent):
+?>
+
+<?php
+else:
+?>
+
+
+   <from action="webform.php" method="POST" class="form">
+    
     <div class="row"</div>
         <div class="input-group">
-            <input type="text" id="name" required>
+            <input  type="text" class="form-control <?=$invalid_class_name ?? "" ?>"  id="name" required>
             <label for="name"><i class="fas fa-user"></i>Your Name</label>
            </div>
 
@@ -67,7 +110,11 @@
     
        <button type="summit">SUBMIT <i class="fas  fa-paper-plane"></i></button>
     </form>
+</from>
 
+<?php
+endif;
+?>
 
 
 

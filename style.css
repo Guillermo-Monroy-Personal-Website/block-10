@@ -742,3 +742,8 @@ textarea:valid~label{
     position: absolute;
     z-index: -1;
 }
+
+.form-invalid{
+
+  outline: 1px solid red !important;
+}
